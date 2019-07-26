@@ -1,7 +1,7 @@
-import React, { button } from 'react';
+import React, { useState } from 'react';
+import '../styles/App.css';
+import calc from './calc';
 // import logo from './misc/logo.svg';
-import './App.css';
-
 // var Component = React.createClass({
 //   getInitialState: App () {
 //     return {
@@ -15,7 +15,7 @@ import './App.css';
 // }
 
 function App() {
-
+  const [input, setInput] = useState('');
   return (
     <div className="App">
       
@@ -24,7 +24,7 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="niggers" /> */}
 
         <h1>
-          Welcoem to Prepit
+          Welcome to Prepit
         </h1>
         
         <p style={{ marginTop: '20px' }} >
@@ -34,12 +34,15 @@ function App() {
         <input
         style={{ marginTop: '20px' }} 
         placeholder="Enter monthly income"
-        //value="penis"
+        value={input} onInput={e => setInput(e.target.value)}
         />
+
         <button
         style={{ marginTop: '20px' }} 
         title="Enter"
+        onClick={calc(input)}
         />
+
         <a
           style={{marginTop: '40px'}} 
           className="App-link"
