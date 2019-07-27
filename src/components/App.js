@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/App.css';
 import calc from './calc';
+import Button from '@material-ui/core/Button';
+
 // import logo from './misc/logo.svg';
 // var Component = React.createClass({
 //   getInitialState: App () {
@@ -16,7 +18,16 @@ import calc from './calc';
 
 function App() {
   const [input, setInput] = useState('');
+  function isNumberKey(evt) {
+    var charCode = (evt.which) ? evt.which : input.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+      return false;
+
+    return true;
+  }
+  
   return (
+    
     <div className="App">
       
       <header className="App-header">
@@ -31,28 +42,37 @@ function App() {
           To get started, please enter how much you make.
         </p>
 
+        
+        <div className="money">
+        <p className="dollar">
+          $
+          </p>
         <input
-        style={{ marginTop: '20px' }} 
         placeholder="Enter monthly income"
+        type="number"
         value={input} onInput={e => setInput(e.target.value)}
+        onkeypress={isNumberKey(input)}
         />
+        </div>
+        
 
-        <button
-        style={{ marginTop: '20px' }} 
-        title="Enter"
-        onClick={calc(input)}
-        />
+        <Button
+        color="primary"
+        className="enter"
+        onClick={() => {calc(input)}}
+        > 
+        Enter 
+        </Button>
 
-        <a
-          style={{marginTop: '40px'}} 
-          className="App-link"
+        <Button
+          style={{marginTop: '100px', color: 'white'}}
           href="https://Prepit.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           
           Visit Prepit
-        </a>
+        </Button>
       </header>
 
     
