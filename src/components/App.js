@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import '../styles/App.css';
 import calc from './calc';
 import Button from '@material-ui/core/Button';
+import logo from '../misc/logo.svg';
 
-// import logo from './misc/logo.svg';
 // var Component = React.createClass({
 //   getInitialState: App () {
 //     return {
@@ -32,7 +32,7 @@ function App() {
       
       <header className="App-header">
         
-        {/* <img src={logo} className="App-logo" alt="niggers" /> */}
+        <img src={logo} className="App-logo" alt="prepit logo" />
 
         <h1>
           Welcome to Prepit
