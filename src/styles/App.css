@@ -23,13 +23,22 @@
 .money {
   height: 20px;
   display: inline-flex;
-  align-content: space-around;
   margin: 20px;
 }
 
 .dollar {
   margin-top: -5px; 
   margin-right: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin-left: 0; 
+}
+
+.box{ 
+ padding: 10px;
 }
 
 .enter {

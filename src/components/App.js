@@ -48,6 +48,7 @@ function App() {
           $
           </p>
         <input
+        className="box"
         placeholder="Enter monthly income"
         type="number"
         value={input} onInput={e => setInput(e.target.value)}
