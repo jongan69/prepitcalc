@@ -23,11 +23,12 @@
 .money {
   height: 20px;
   display: inline-flex;
+  flex-direction: row;
   margin: 20px;
 }
 
 .dollar {
-  margin-top: -1px; 
+  margin-top: 0rem; 
   margin-right: 5px;
 }
 
