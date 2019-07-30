@@ -1,0 +1,15 @@
+.calc {
+ align-content: center;
+}
+
+.caption {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+
+.text {
+  font-size: 16px;
+  color: chartreuse;
+  flex-direction: column;
+}

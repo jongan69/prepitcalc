@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/App.css';
-import calc from './calc';
+import { calc } from './calc';
 import Button from '@material-ui/core/Button';
 import logo from '../misc/logo.svg';
 
@@ -39,7 +39,7 @@ function App() {
         </h1>
         
         <p style={{ marginTop: '20px' }} >
-          To get started, please enter how much you make.
+          To get started, please enter your monthly income.
         </p>
 
         
@@ -57,13 +57,15 @@ function App() {
         </div>
         
 
-        <Button
+        {/* <Button
         color="primary"
         className="enter"
-        onClick={() => {calc(input)}}
+        onClick={calc(input)}        
         > 
         Enter 
-        </Button>
+        </Button> */}
+
+        {calc(input)}
 
         <Button
           style={{marginTop: '100px', color: 'white'}}
