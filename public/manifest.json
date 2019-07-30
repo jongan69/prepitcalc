@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Prep it App",
+  "name": "Prep it Calculator - An App for calculating food budget",
   "icons": [
     {
       "src": "favicon.ico",

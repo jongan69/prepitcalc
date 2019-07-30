@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+} from 'react-router-dom';
+import Homepage from '../pages/HomePage';
 import '../styles/App.css';
-import { calc } from './calc';
-import Button from '@material-ui/core/Button';
-import logo from '../misc/logo.svg';
+import calc from '../pages/calc';
 
 // var Component = React.createClass({
 //   getInitialState: App () {
@@ -16,72 +19,16 @@ import logo from '../misc/logo.svg';
 //   });
 // }
 
-function App() {
-  const [input, setInput] = useState('');
-  function isNumberKey(evt) {
-    var charCode = (evt.which) ? evt.which : input.keyCode
-    if (charCode > 31 && (charCode < 48 || charCode > 57))
-      return false;
-
-    return true;
-  }
-  
-  return (
-    
-    <div className="App">
-      
-      <header className="App-header">
-        
-        <img src={logo} className="App-logo" alt="prepit logo" />
-
-        <h1>
-          Welcome to Prepit
-        </h1>
-        
-        <p style={{ marginTop: '20px' }} >
-          To get started, please enter your monthly income.
-        </p>
-
-        
-        <div className="money">
-        <p className="dollar">
-          $
-          </p>
-        <input
-        className="box"
-        placeholder="Enter monthly income"
-        type="number"
-        value={input} onInput={e => setInput(e.target.value)}
-        onkeypress={isNumberKey(input)}
-        />
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div className="App"> 
+          <Route path="/" component={Homepage} exact/>
+          <Route path="/calc" component={calc} exact />
         </div>
-        
-
-        {/* <Button
-        color="primary"
-        className="enter"
-        onClick={calc(input)}        
-        > 
-        Enter 
-        </Button> */}
-
-        {calc(input)}
-
-        <Button
-          style={{marginTop: '100px', color: 'white'}}
-          href="https://Prepit.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-          Visit Prepit
-        </Button>
-      </header>
-
-    
-
-    </div>
-  );
+      </Router>
+    );
+  }
 }
-
 export default App;
