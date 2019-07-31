@@ -6,16 +6,17 @@
 
 .Calculator-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .calc {
+ margin-top: 20px;
+ margin-bottom: 20px;
  align-content: center;
  display: flex;
  flex-direction: column;
@@ -28,12 +29,35 @@
 }
 
 .text {
+  color-adjust: #FFF;
   font-size: 16px;
-  color: chartreuse;
+  color:#FFF;
   flex-direction: column;
 }
 
 .money {
   align-content: center;
   justify-content: center;
+}
+
+.Button {
+  margin-top: '100px';
+  color: 'white';
+}
+
+.box{ 
+ padding: 10px;
+}
+
+
+.money {
+  height: 20px;
+  display: inline-flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.dollar {
+  margin-top: 0rem;
+  margin-right: 5px;
 }

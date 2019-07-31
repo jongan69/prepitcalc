@@ -10,9 +10,6 @@ const NavBar = () => (
       <li>
         <Link to="/Calculator"> Calculator </Link>
       </li>
-      <li>
-        <Link to="http://prepit.org"> Prep it </Link>
-      </li>
     </ul>
   </nav>
 );

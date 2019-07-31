@@ -24,7 +24,7 @@ const HomePage = () => (
          
       <Button
       className="Button"
-      onClick={Calculator()}
+      onClick={Calculator}
       >
         Click here to learn about your budget!
       </Button>

@@ -19,19 +19,6 @@
   color: white;
 }
 
-
-.money {
-  height: 20px;
-  display: inline-flex;
-  flex-direction: row;
-  margin: 20px;
-}
-
-.dollar {
-  margin-top: 0rem; 
-  margin-right: 5px;
-}
-
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
