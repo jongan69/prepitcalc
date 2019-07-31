@@ -1,7 +1,7 @@
 import React from 'react';
-import calc from './calc';
+import Calculator from './Calculator';
 import Button from '@material-ui/core/Button';
-import '../styles/App.css';
+import '../styles/Homepage.css';
 import logo from '../misc/logo.svg';
   
 // {/* <Button
@@ -16,13 +16,16 @@ import logo from '../misc/logo.svg';
 
 const HomePage = () => (
     
-    <header className="App-header">
+    <header className="Homepage-header">
       <img src={logo} className="App-logo" alt="prepit logo" />
       <h1>
         Welcome to Prepit
         </h1>
          
-      <Button>
+      <Button
+      className="Button"
+      onClick={Calculator()}
+      >
         Click here to learn about your budget!
       </Button>
     </header>

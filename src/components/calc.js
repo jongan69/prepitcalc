@@ -1,23 +1,31 @@
 import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
-import '../styles/calc.css'
+import '../styles/Calculator.css'
 
+// const [input, setInput] = useState('');
 class calc extends Component{
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      input: ''
+    };
+  }
+  
   render() {
-    // const [input, setInput] = useState(''); useState,
+
     // function isNumberKey(evt) {
-    //   var charCode = (evt.which) ? evt.which : input.keyCode
+    //   var charCode = (evt.which) ? evt.which : monthly.keyCode
     //   if (charCode > 31 && (charCode < 48 || charCode > 57))
     //     return false;
     //   return true;
     // }
-
-    // const HEspend = (input * .15);
-    // const LEspend = (input * .12);
-    // const mfBudget =(LEspend + HEspend)/2;
-    // const wBudget = (mfBudget / 4);
-    // const dBudget = (wBudget/7);
-
+    const monthly = this.setState.input;
+    const heSpend = (monthly * .15);
+    const leSpend = (monthly * .12);
+    const mfBudget =(leSpend + heSpend)/2;
+    const wBudget = (mfBudget / 4);
+    const dBudget = (wBudget/7);
     return (
       <React.Fragment>
         <div className="calc">
@@ -33,8 +41,9 @@ class calc extends Component{
             className="box"
             placeholder="Enter monthly income"
             type="number"
-            // value={input} onInput={e => setInput(e.target.value)}
-            // onkeypress={isNumberKey(input)}
+            value={this.setState.input} 
+            onInput={() => this.setState({ input: this.state.input })}
+            // onkeypress={isNumberKey(this.state.input)}
           />
         </div>
 
@@ -42,7 +51,7 @@ class calc extends Component{
           Below is a breakdown of how much you should spend per month on food.
         </text>
 
-        {/* <text className="text">
+        <text className="text">
           Monthly Food Budget: ${mfBudget}
         </text>
 
@@ -52,7 +61,7 @@ class calc extends Component{
 
         <text className="text">
           Daily Food Budget: ${dBudget}
-        </text> */}
+        </text>
 
         <Button
           style={{ marginTop: '100px', color: 'white' }}

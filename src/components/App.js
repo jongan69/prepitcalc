@@ -3,9 +3,10 @@ import {
   BrowserRouter as Router,
   Route,
 } from 'react-router-dom';
+import Calculator from '../pages/Calculator';
 import Homepage from '../pages/HomePage';
 import '../styles/App.css';
-import calc from '../pages/calc';
+import NavBar from './NavBar';
 
 // var Component = React.createClass({
 //   getInitialState: App () {
@@ -23,9 +24,12 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App"> 
-          <Route path="/" component={Homepage} exact/>
-          <Route path="/calc" component={calc} exact />
+        <div className="App">
+          <NavBar/>
+          <div id="page-body">
+            <Route path="/" component={Homepage} exact/>
+            <Route path="/calculator" component={Calculator} exact />
+          </div> 
         </div>
       </Router>
     );
