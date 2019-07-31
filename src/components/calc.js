@@ -1,8 +1,7 @@
 import React from 'react';
-import Text from '@material-ui/core/Button';
 import '../styles/Calculator.css'
 
-// const [input, setInput] = useState('');
+
 // function isNumberKey(evt) {
     //   var charCode = (evt.which) ? evt.which : monthly.keyCode
     //   if (charCode > 31 && (charCode < 48 || charCode > 57))
@@ -23,21 +22,21 @@ function calc (input) {
       <React.Fragment>
         <div className="calc">
 
-        <Text className="caption">
+        <text className="caption">
           Below is a breakdown of how much you should spend per month on food.
-        </Text>
+        </text>
 
-        <Text className="text">
+        <text className="text">
           Monthly Food Budget: ${mfBudget}
-        </Text>
+        </text>
 
-        <Text className="text">
+        <text className="text">
           Weekly Food Budget: ${wBudget}
-        </Text>
+        </text>
 
-        <Text className="text">
+        <text className="text">
           Daily Food Budget: ${dBudget}
-        </Text>
+        </text>
         </div>
       </React.Fragment>
   );
