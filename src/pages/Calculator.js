@@ -1,26 +1,38 @@
 import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
-import { calc } from '../components/calc';
+import { 
+  Button,
+  TextField
+} from '@material-ui/core';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/styles';
+import { Calc } from '../components/Calc';
 import '../styles/Calculator.css';
 import logo from '../misc/logo.svg';
 
 
-// const [input, setInput] = useState('');
+const theme = createMuiTheme({
+  palette: {
+    primary: { main: '#fafafa' },
+    secondary: { main: '#fafafa' },
+    text: '#fff',
+  }
+});
 
 class Calculator extends Component {
+  
   constructor(props) {
     super(props);
     this.state = { input: '' };
     this.onUpdate = this.onUpdate.bind(this);
-    
   }
-  
+
+
   onUpdate(event) {
     this.setState({input: event.target.value });
     }
   
-  render() {
-    
+  render() {   
+  
 
     return (
       <header className="Calculator-header">
@@ -28,31 +40,33 @@ class Calculator extends Component {
         <h1>
           Welcome to the Calculator!
         </h1>
-        <p style={{ marginTop: '20px' }} >
+        <p className="Instructions" >
           To get started, please enter your monthly income.
             </p>
 
-        <div className="money">
-          <p className="dollar">
+        <div className="Box">
+          <p className="Money">
             $
-          </p>
-
-          <input
-            className="box"
-            placeholder="Enter monthly income"
-            type="number"
-            pattern="[0-9]*"
-            inputMode="numeric"
-            value={this.state.input}
-            onChange={this.onUpdate}
-          />
+        </p>
+          <ThemeProvider theme={theme}>
+            <TextField
+              type="number"
+              label="Enter Monthly Income"
+              placeholder="Monthly income"
+              variant="outlined"
+              id="mui-theme-provider-outlined-input"
+              autoFocus
+              value={this.state.input}
+              onChange={this.onUpdate}
+            />
+          </ThemeProvider>
         </div>
 
-          {calc(this.state.input)}
-          
+          {Calc(this.state.input)}
           
           <Button
-            style={{ marginTop: '150px', color: 'white' }}
+            color="secondary"
+            className="Button"
             href="https://Prepit.org"
             target="_blank"
             rel="noopener noreferrer"

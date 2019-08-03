@@ -1,7 +1,8 @@
 import React from 'react';
+import Text from '@material-ui/core/Button';
 import '../styles/Calculator.css'
 
-
+// const [input, setInput] = useState('');
 // function isNumberKey(evt) {
     //   var charCode = (evt.which) ? evt.which : monthly.keyCode
     //   if (charCode > 31 && (charCode < 48 || charCode > 57))
@@ -10,7 +11,7 @@ import '../styles/Calculator.css'
     // }
     // let input = 0;
 
-function calc (input) {
+function Calc (input) {
   
   const heSpend = (input * .15);
   const leSpend = (input * .12);
@@ -20,27 +21,29 @@ function calc (input) {
    
     return (
       <React.Fragment>
-        <div className="calc">
+        <div className="Calc">
 
-        <text className="caption">
+        <Text className="Caption"
+        
+        >
           Below is a breakdown of how much you should spend per month on food.
-        </text>
+        </Text>
 
-        <text className="text">
+        <Text className="Text">
           Monthly Food Budget: ${mfBudget}
-        </text>
+        </Text>
 
-        <text className="text">
+        <Text className="Text">
           Weekly Food Budget: ${wBudget}
-        </text>
+        </Text>
 
-        <text className="text">
+        <Text className="Text">
           Daily Food Budget: ${dBudget}
-        </text>
+        </Text>
         </div>
       </React.Fragment>
   );
 }
 
 
-export { calc };
+export { Calc };
