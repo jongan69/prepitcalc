@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { 
-  Button,
-  TextField
-} from '@material-ui/core';
+import { Button, TextField } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import { Calc } from '../components/Calc';
@@ -26,14 +23,12 @@ class Calculator extends Component {
     this.onUpdate = this.onUpdate.bind(this);
   }
 
-
   onUpdate(event) {
     this.setState({input: event.target.value });
     }
   
   render() {   
   
-
     return (
       <header className="Calculator-header">
         <img src={logo} className="App-logo" alt="prepit logo" />
@@ -43,7 +38,6 @@ class Calculator extends Component {
         <p className="Instructions" >
           To get started, please enter your monthly income.
             </p>
-
         <div className="Box">
           <p className="Money">
             $
@@ -71,7 +65,6 @@ class Calculator extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-
             Visit Prepit
           </Button>
       </header>
