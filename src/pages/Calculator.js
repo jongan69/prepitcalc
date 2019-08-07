@@ -31,8 +31,8 @@ class Calculator extends Component {
   
     return (
       <header className="Calculator-header">
-        <img src={logo} className="App-logo" alt="prepit logo" />
-        <h1>
+        {/* <img src={logo} className="App-logo" alt="prepit logo" /> */}
+        <h1 className="Title">
           Welcome to the Calculator!
         </h1>
         <p className="Instructions" >
