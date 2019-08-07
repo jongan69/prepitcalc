@@ -45,8 +45,8 @@ class Calculator extends Component {
           <ThemeProvider theme={theme}>
             <TextField
               type="number"
-              label="Enter Monthly Income"
-              placeholder="Monthly income"
+              label="Enter Dollar Value"
+              placeholder="Monthly Income"
               variant="outlined"
               id="mui-theme-provider-outlined-input"
               autoFocus
