@@ -8,6 +8,7 @@ import Homepage from '../pages/HomePage';
 import Details from '../pages/Details';
 import '../styles/App.css';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 // var Component = React.createClass({
 //   getInitialState: App () {
@@ -31,6 +32,7 @@ class App extends Component {
             <Route path="/" component={Homepage} exact/>
             <Route path="/Calculator" component={Calculator} exact />
             <Route path="/LearnMore" component={Details} exact />
+            <Footer/>
           </div> 
         </div>
       </Router>

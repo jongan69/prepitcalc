@@ -1,33 +1,23 @@
 import React from 'react';
-import Calculator from './Calculator';
-import Button from '@material-ui/core/Button';
-import '../styles/Homepage.css';
+
+// import Button from '@material-ui/core/Button';
+import '../styles/Details.css';
 import logo from '../misc/logo.svg';
-
-// {/* <Button
-//         color="primary"
-//         className="enter"
-//         onClick={calc(input)}        
-//         > 
-//         Enter 
-//         </Button> */}
-
-
 
 const Details = () => (
 
   <header className="Homepage-header">
-    <img src={logo} className="App-logo" alt="prepit logo" />
     <h1>
-      Welcome to Prepit
+      Details
         </h1>
-
-    <Button
-      className="Button"
-      onClick={Calculator}
-    >
-      Click here to learn about your budget!
-      </Button>
+    <img src={logo} className="App-logo" alt="prepit logo" />
+    <p>
+      Hi there and welcome to the App!
+      Here at Prepit we have one goal in mind: 
+    </p>
+    <p>
+      Helping you to eat healthier while on a budget!
+    </p>
   </header>
 );
 
