@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import Calculator from '../pages/Calculator';
 import Homepage from '../pages/HomePage';
+import Details from '../pages/Details';
 import '../styles/App.css';
 import NavBar from './NavBar';
 
@@ -28,7 +29,8 @@ class App extends Component {
           <NavBar/>
           <div id="page-body">
             <Route path="/" component={Homepage} exact/>
-            <Route path="/calculator" component={Calculator} exact />
+            <Route path="/Calculator" component={Calculator} exact />
+            <Route path="/LearnMore" component={Details} exact />
           </div> 
         </div>
       </Router>

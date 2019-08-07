@@ -1,5 +1,4 @@
 import React from 'react';
-import Calculator from './Calculator';
 import Button from '@material-ui/core/Button';
 import '../styles/Homepage.css';
 import logo from '../misc/logo.svg';
@@ -11,7 +10,10 @@ import logo from '../misc/logo.svg';
 //         > 
 //         Enter 
 //         </Button> */}
-
+function handleClick () {
+  window.location.assign('/Calculator');
+  //how to open pop up page passing parameters?    
+}
 
 
 const HomePage = () => (
@@ -24,7 +26,7 @@ const HomePage = () => (
          
       <Button
       className="Button"
-      onClick={Calculator}
+      onClick={() => handleClick()}
       >
         Click here to learn about your budget!
       </Button>
