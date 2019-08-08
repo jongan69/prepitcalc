@@ -13,9 +13,6 @@ function handleClick () {
 
 function HomePage () {
   const [pageInfo, setPageInfo] = useState({ visits: 0, comments: [] });
-  function returnValue(e) {
-    return pageInfo;
-  }
   useEffect(() => {
     const fetchData = async() => {
       const result = await fetch(`/api/Home/visits`);
@@ -23,7 +20,7 @@ function HomePage () {
       setPageInfo(body)
     }
     fetchData();
-  }, [onclick = returnValue()]);
+  }, []);
     return(
     <header className="Homepage-header">
       <img src={logo} className="App-logo" alt="prepit logo" />
