@@ -16,5 +16,8 @@
 }
 
 .Button {
-  color: '#FFF';
-}
+    width: 50% !important;
+    margin: 0 auto !important;
+    border: 2px solid #FAFAFA !important;
+    background-color: #ffd699 !important;
+  }

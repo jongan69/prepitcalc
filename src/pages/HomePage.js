@@ -5,6 +5,7 @@ import '../styles/Homepage.css';
 import logo from '../misc/logo.svg';
   
 
+
 function handleClick () {
   window.location.assign('/Calculator'); 
 }
@@ -27,13 +28,14 @@ function HomePage () {
       <h1>
         Welcome to Prepit
         </h1>
-         
+
       <Button
       className="Button"
       onClick={() => handleClick()}
       >
         Click here to learn about your budget!
       </Button>
+
     <p> This page has been viewed {pageInfo.visits} times</p>
     </header>
   )};
