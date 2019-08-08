@@ -37,7 +37,7 @@ const Footer = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="cryptocurrensea.io"> Cryptocurrensea </a>
+          &copy; {new Date().getFullYear()} Copyright: <a href="http://cryptocurrensea.io"> Cryptocurrensea </a>
         </MDBContainer>
       </div>
     </MDBFooter>
