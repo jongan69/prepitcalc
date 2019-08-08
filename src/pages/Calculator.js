@@ -56,7 +56,7 @@ class Calculator extends Component {
 
           {Calc(this.state.input)}
           
-          <Button
+          {/* <Button
             color="secondary"
             className="Button"
             href="https://Prepit.org"
@@ -64,7 +64,7 @@ class Calculator extends Component {
             rel="noopener noreferrer"
           >
             Visit Prepit
-          </Button>
+          </Button> */}
       </header>
     );
   }
