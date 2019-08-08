@@ -26,7 +26,7 @@ function Calc (input) {
         <Text className="Caption"
         
         >
-          Below is a breakdown of how much you should spend per month on food.
+          Here is a breakdown of how much you should spend per month on food.
         </Text>
 
         <Text className="Text">

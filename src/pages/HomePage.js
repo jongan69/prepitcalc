@@ -33,7 +33,7 @@ function HomePage () {
       className="Button"
       onClick={() => handleClick()}
       >
-        Click here to learn about your budget!
+        Click here to learn about your Budget & Diet!
       </Button>
 
     <p> This page has been viewed {pageInfo.visits} times</p>
