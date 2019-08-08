@@ -33,9 +33,15 @@ class Calculator extends Component {
         <h1 className="Title">
           Welcome to the Calculator!
         </h1>
+        <iframe
+          title="Calorie Calculator"
+          src="https://www.choosemyplate.gov/widgets-sm/myplate-plan-start"
+          scrolling="no" style={{ 'min-height': '300px', 'marginTop': '80px' }}>
+        </iframe>
         <p className="Instructions" >
           To get started, please enter your monthly income.
             </p>
+            
         <div className="Box">
           <p className="Money">
             $
@@ -53,7 +59,6 @@ class Calculator extends Component {
             />
           </ThemeProvider>
         </div>
-
           {Calc(this.state.input)}
           
           {/* <Button

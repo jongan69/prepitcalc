@@ -41,6 +41,7 @@ function Calc (input) {
           Daily Food Budget: ${dBudget}
         </Text>
         </div>
+        
       </React.Fragment>
   );
 }
