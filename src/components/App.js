@@ -12,20 +12,13 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 import NotFoundPage from '../pages/NotFoundPage';
 
-// var Component = React.createClass({
-//   getInitialState: App () {
-//     return {
-//       inputValue: ''
-//     }
-//   },
-// updateInputValue: function(evt) {
-//   this.setState({
-//     inputValue: evt.target.value
-//   });
-// }
+
 
 class App extends Component {
+  
   render() {
+
+
     return (
       <Router>
         <div className="App">
@@ -36,9 +29,9 @@ class App extends Component {
             <Route path="/Calculator" component={Calculator} exact />
             <Route path="/LearnMore" component={Details} exact />
             <Route component={NotFoundPage} />
-            <Footer/>
             </Switch>
-          </div> 
+          </div>
+          <Footer /> 
         </div>
       </Router>
     );

@@ -4,7 +4,6 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import { Calc } from '../components/Calc';
 import '../styles/Calculator.css';
-import logo from '../misc/logo.svg';
 
 
 const theme = createMuiTheme({
@@ -16,7 +15,6 @@ const theme = createMuiTheme({
 });
 
 class Calculator extends Component {
-  
   constructor(props) {
     super(props);
     this.state = { input: '' };
