@@ -1,6 +1,20 @@
 import React from 'react';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 
+
+
+
+const Quoteswitcher = () => {
+  const rand = Math.floor(Math.random() * 4) + 1;
+  if (rand === 1) {
+    return <p> “It is health that is real wealth and not pieces of gold and silver.” Mahatma Gandhi</p>;
+  }
+  if (rand === 2) {
+    return <p> “Health is not valued till sickness comes.” Thomas Fuller</p>;
+  }
+  return <p> “Health is the greatest gift.” Buddha </p>;
+};
+
 const Footer = () => {
   return (
     <MDBFooter color="blue" className="font-small pt-3 mt-1" style={{ alignItems: 'center' }}>
@@ -12,9 +26,9 @@ const Footer = () => {
               Prepit
               </a>
             </h5>
-            <p>
-              "Eat food as your medicine or you''ll eat medicine as your food"
-            </p>
+
+              {Quoteswitcher()}
+            
           </MDBCol>
         </MDBRow>
       </MDBContainer>

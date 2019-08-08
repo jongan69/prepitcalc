@@ -22,10 +22,11 @@ function HomePage () {
     }
     fetchData();
   }, []);
+
     return(
     <header className="Homepage-header">
       <img src={logo} className="App-logo" alt="prepit logo" />
-      <h1>
+      <h1 className="h1">
         Welcome to Prepit
         </h1>
 
@@ -36,7 +37,7 @@ function HomePage () {
         Click here to learn about your Budget & Diet!
       </Button>
 
-    <p> This page has been viewed {pageInfo.visits} times</p>
+    <p style={{marginTop: '60px'}}> This page has been viewed {pageInfo.visits} times</p>
     </header>
   )};
 

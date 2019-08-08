@@ -33,11 +33,30 @@ class Calculator extends Component {
         <h1 className="Title">
           Welcome to the Calculator!
         </h1>
-        <iframe
+        <iframe src="https://www.mealpro.net/bmr/?color=435363"
+          title="BMR Calculator" 
+          style={{
+          'marginTop': '80px',
+          'max-width': '100%',
+          'frameborder': "0",
+          'width': '500',
+          'height': '500px'
+          }}>
+        </iframe>
+        <iframe 
+        src="https://www.mealpro.net/bmi/?color=435363" 
+        title="BMI Calculator"
+        style={{
+        'max-width': '100%',
+        'frameborder': "0", 
+        'width':  '500', 
+        'height': '500px'
+        }}></iframe>
+        {/* <iframe
           title="Calorie Calculator"
           src="https://www.choosemyplate.gov/widgets-sm/myplate-plan-start"
-          scrolling="no" style={{ 'min-height': '300px', 'marginTop': '80px' }}>
-        </iframe>
+          scrolling="no" style={{ 'min-height': '400px', 'marginTop': '80px' }}>
+        </iframe> */}
         <p className="Instructions" >
           To get started, please enter your monthly income.
             </p>
@@ -59,8 +78,9 @@ class Calculator extends Component {
             />
           </ThemeProvider>
         </div>
+        <div style={{marginBottom: '10px', paddingBottom: '60px'}}>
           {Calc(this.state.input)}
-          
+        </div>
           {/* <Button
             color="secondary"
             className="Button"
