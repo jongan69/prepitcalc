@@ -58,7 +58,7 @@ class Calculator extends Component {
           scrolling="no" style={{ 'min-height': '400px', 'marginTop': '80px' }}>
         </iframe> */}
         <p className="Instructions" >
-          To get started, please enter your monthly income.
+          Enter your monthly income
             </p>
             
         <div className="Box">
@@ -81,6 +81,11 @@ class Calculator extends Component {
         <div style={{marginBottom: '10px', paddingBottom: '60px'}}>
           {Calc(this.state.input)}
         </div>
+          <p style={{paddingBottom: '20px'}}>
+          *THIS WEBSITE IS IN DEVELOPMENT, FOR MORE INFORMATION VISIT THE 
+          <a href='/LearnMore'> LEARN MORE </a>
+          PAGE*
+          </p>
           {/* <Button
             color="secondary"
             className="Button"
