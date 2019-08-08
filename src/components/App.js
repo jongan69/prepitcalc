@@ -7,6 +7,7 @@ import {
 import Calculator from '../pages/Calculator';
 import Homepage from '../pages/HomePage';
 import Details from '../pages/Details';
+import Resources from '../pages/Resources';
 import '../styles/App.css';
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -28,6 +29,7 @@ class App extends Component {
             <Route path="/" component={Homepage} exact/>
             <Route path="/Calculator" component={Calculator} exact />
             <Route path="/LearnMore" component={Details} exact />
+            <Route path="/Resources" component={Resources} exact />
             <Route component={NotFoundPage} />
             </Switch>
           </div>

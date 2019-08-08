@@ -33,6 +33,9 @@ export default class NavBar extends React.Component {
               <NavItem>
                 <NavLink href="/LearnMore">Learn More</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href="/Resources">Resources</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
