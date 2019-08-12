@@ -4,10 +4,11 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import Calculator from '../pages/Calculator';
+// import Calculator from '../pages/Calculator';
 import Homepage from '../pages/HomePage';
 import Details from '../pages/Details';
 import Resources from '../pages/Resources';
+import Calculatorv2 from '../pages/Calculatorv2';
 import '../styles/App.css';
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -27,7 +28,7 @@ class App extends Component {
           <div id="page-body">
             <Switch>
             <Route path="/" component={Homepage} exact/>
-            <Route path="/Calculator" component={Calculator} exact />
+            <Route path="/Calculator" component={Calculatorv2} exact />
             <Route path="/LearnMore" component={Details} exact />
             <Route path="/Resources" component={Resources} exact />
             <Route component={NotFoundPage} />

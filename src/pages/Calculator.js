@@ -52,11 +52,7 @@ class Calculator extends Component {
         'width':  '500', 
         'height': '500px'
         }}></iframe>
-        {/* <iframe
-          title="Calorie Calculator"
-          src="https://www.choosemyplate.gov/widgets-sm/myplate-plan-start"
-          scrolling="no" style={{ 'min-height': '400px', 'marginTop': '80px' }}>
-        </iframe> */}
+        
         <p className="Instructions" >
           Enter your monthly income
             </p>

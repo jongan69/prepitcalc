@@ -29,7 +29,8 @@
 .Box {
 padding-top: 60px;
 margin-bottom: 60px;
-display: inline-flex;
+display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-right: 5px; 
@@ -77,9 +78,10 @@ background-color: #FFF;
 
 .Button {
   position: fixed;
-  margin-top: '100px';
-  color: 'white';
-  color: 'white'; 
+  background-color: #FFF;
+  margin-top: 100px;
+  padding-top: 20px;
+  color: #FFF;
   position: 'fixed'
 }
 

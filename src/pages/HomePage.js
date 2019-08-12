@@ -13,6 +13,8 @@ function handleClick () {
 
 
 function HomePage () {
+
+
   const [pageInfo, setPageInfo] = useState({ visits: 0, comments: [] });
   useEffect(() => {
     const fetchData = async() => {
@@ -22,6 +24,8 @@ function HomePage () {
     }
     fetchData();
   }, []);
+
+  
 
     return(
     <header className="Homepage-header">
