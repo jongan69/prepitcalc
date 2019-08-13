@@ -51,19 +51,39 @@ const Gender = [
 
 function Calculatorv2() {
 
-
+function check(){
+  if (values.Email && values.Budget && values.Height && values.Weight && values.Age !== ''){
+    return Calc(values.Budget, values.Height, values.Weight, values.Age, values.Gender);
+  }
+  else {
+    return <p> Calculations will automatically populate when values are entered. </p>
+  }
+}
 
   const classes = useStyles();
 
   const [values, setValues] = React.useState({
     Email: 'example@gmail.com',
-    Budget: 'Enter Budget',
-    Height: 'Enter Height',
-    Weight: 'Enter Weight',
-    Age: 'Enter Age',
+    Budget: '',
+    Height: '',
+    Weight: '',
+    Age: '',
     Gender: 'Male',
     Currency: 'USD',
   });
+
+  // function ValidateEmail(inputText) {
+  //   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  //   if (inputText.value.match(mailformat)) {
+  //     document.form1.text1.focus();
+  //     return true;
+  //   }
+  //   else {
+  //     alert("You have entered an invalid email address!");
+  //     document.form1.text1.focus();
+  //     return false;
+  //   }
+  // }
 
   const handleChange = name => event => {
     setValues({ ...values, [name]: event.target.value });
@@ -196,7 +216,7 @@ function Calculatorv2() {
       </div>
 
       <div style={{ marginBottom: '10px', paddingBottom: '60px' }}>
-        {Calc(values.Budget, values.Height, values.Weight, values.Age, values.Gender)}
+        {check(values.Budget, values.Height, values.Weight, values.Age, values.Gender)}
       </div>
 
       <p style={{ paddingBottom: '20px' }}>
