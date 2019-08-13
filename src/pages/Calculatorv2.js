@@ -116,7 +116,7 @@ function check(){
                 onChange={handleChange('Email')}
                 margin="normal"
                 variant="outlined"
-                helperText="Please select your Email"
+                helperText="Please enter your Email"
               />
 
               <TextField
@@ -128,7 +128,7 @@ function check(){
                 onChange={handleChange('Budget')}
                 margin="normal"
                 variant="outlined"
-                helperText="Please select your Monthly Income"
+                helperText="Please enter your Monthly Income"
               />
               {/* <TextField
                 id="outlined-input"
@@ -150,7 +150,7 @@ function check(){
                 onChange={handleChange('Height')}
                 margin="normal"
                 variant="outlined"
-                helperText="Please select your Height (ie. 6 ft = 72 inches)"
+                helperText="Please enter your Height (ie. 6 ft = 72 inches)"
               />
             </form>
           </ThemeProvider>
@@ -169,7 +169,7 @@ function check(){
                   onChange={handleChange('Weight')}
                   margin="normal"
                   variant="outlined"
-                  helperText="Please select your Weight"
+                  helperText="Please enter your Weight"
                 />
 
                 <TextField
@@ -181,7 +181,7 @@ function check(){
                   onChange={handleChange('Age')}
                   margin="normal"
                   variant="outlined"
-                  helperText="Please select your Age"
+                  helperText="Please enter your Age"
                 />
 
                 <TextField
