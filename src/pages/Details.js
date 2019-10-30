@@ -5,7 +5,7 @@ import logo from '../misc/logo.svg';
 
 
 function Details (){
-  const bmi = require('/Users/jonathan/Desktop/Local Code/prepitcalc/src/misc/bmichart.png')
+  const bmi = require('../../src/misc/bmichart.png')
     return(
       <header className="Homepage-header">
         <h1>
