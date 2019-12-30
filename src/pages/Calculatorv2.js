@@ -1,11 +1,13 @@
 /* eslint-disable no-lone-blocks */
-import React from 'react';
 import { TextField } from '@material-ui/core';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import { Calc } from '../components/Calc';
-import '../styles/Calculator.css';
 import { makeStyles } from '@material-ui/core/styles';
+
+import React from 'react';
+
+import { Calc } from '../components/calc';
+import '../styles/Calculator.css';
 
 const useStyles = makeStyles(theme => ({
   container: {

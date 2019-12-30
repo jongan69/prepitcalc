@@ -1,14 +1,16 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect } from 'react';
 import Button from '@material-ui/core/Button';
-import '../styles/Homepage.css';
+
+import React, { useState, useEffect } from 'react';
+
 import logo from '../misc/logo.svg';
+import '../styles/Homepage.css';
   
 
 
-function handleClick () {
-  window.location.assign('/Calculator'); 
-}
+// function handleClick () {
+//   window.location.assign('/Calculator'); 
+// }
 
 
 
@@ -36,7 +38,7 @@ function HomePage () {
 
       <Button
       className="Button"
-      onClick={() => handleClick()}
+      // onClick={() => handleClick()}
       >
         Click here to learn about your Budget & Diet!
       </Button>

@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
+
 import {
   BrowserRouter as Router,
   Route,
   Switch
 } from 'react-router-dom';
-// import Calculator from '../pages/Calculator';
-import Homepage from '../pages/HomePage';
-import Details from '../pages/Details';
-import Resources from '../pages/Resources';
+
 import Calculatorv2 from '../pages/Calculatorv2';
-import '../styles/App.css';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import Details from '../pages/Details';
+import Homepage from '../pages/HomePage';
 import NotFoundPage from '../pages/NotFoundPage';
+import Resources from '../pages/Resources';
+import '../styles/App.css';
+
+import Footer from './Footer';
+import NavBar from './NavBar';
 
 
 
@@ -27,7 +29,7 @@ class App extends Component {
           <NavBar/>
           <div id="page-body">
             <Switch>
-            <Route path="/" component={Homepage} exact/>
+            <Route path="/" component={Calculatorv2} exact/>
             <Route path="/Calculator" component={Calculatorv2} exact />
             <Route path="/LearnMore" component={Details} exact />
             <Route path="/Resources" component={Resources} exact />
