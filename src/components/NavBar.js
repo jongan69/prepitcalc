@@ -28,9 +28,6 @@ export default class NavBar extends React.Component {
                 <NavLink href="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Calculator">Diet & Budget Calculator</NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink href="/LearnMore">Learn More</NavLink>
               </NavItem>
               <NavItem>
